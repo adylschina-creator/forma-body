@@ -1,0 +1,175 @@
+.cta {
+  padding: 140px 0;
+  background: #f5f2ec;
+}
+
+.cta__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 100px;
+  align-items: end;
+}
+
+.cta__content {
+  max-width: 760px;
+}
+
+.cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 28px;
+
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: var(--color-ink-soft);
+}
+
+.cta__eyebrow::before {
+  content: '';
+
+  width: 28px;
+  height: 1px;
+
+  background: var(--color-ink-soft);
+}
+
+.cta__title {
+  margin: 0;
+
+  font-family: var(--font-display);
+  font-size: clamp(48px, 5.5vw, 76px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+
+  color: var(--color-ink);
+}
+
+.cta__text {
+  max-width: 470px;
+  margin: 32px 0 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: var(--color-ink-soft);
+}
+
+.cta__action {
+  margin-top: 40px;
+}
+
+.cta__price {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 30px 32px;
+
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+
+  background: transparent;
+
+  transition:
+    border-color 0.4s ease,
+    background-color 0.4s ease,
+    transform 0.4s ease;
+}
+
+.cta__price:hover {
+  border-color: rgba(38, 37, 34, 0.32);
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-3px);
+}
+
+.cta__price-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+
+  color: var(--color-ink-soft);
+}
+
+.cta__price-value {
+  margin-top: 16px;
+
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+
+  color: var(--color-ink);
+}
+
+.cta__price-note {
+  max-width: 190px;
+  margin-top: 13px;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: var(--color-ink-soft);
+}
+
+@media (max-width: 899px) {
+  .cta {
+    padding: 100px 0;
+  }
+
+  .cta__inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .cta__price {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 599px) {
+  .cta {
+    padding: 80px 0;
+  }
+
+  .cta__eyebrow {
+    margin-bottom: 22px;
+    font-size: 10px;
+  }
+
+  .cta__title {
+    font-size: 44px;
+    line-height: 0.99;
+  }
+
+  .cta__text {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+
+  .cta__action {
+    margin-top: 30px;
+  }
+
+  .cta__inner {
+    gap: 44px;
+  }
+
+  .cta__price {
+    max-width: none;
+    padding: 24px;
+  }
+
+  .cta__price-value {
+    font-size: 38px;
+  }
+}

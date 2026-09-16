@@ -1,0 +1,144 @@
+.footer {
+  padding: 70px 0 30px;
+
+  background: var(--color-ink);
+  color: #ffffff;
+}
+
+/* ВЕРХНЯЯ ЧАСТЬ */
+
+.footer__inner {
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 80px;
+}
+
+/* БРЕНД */
+
+.footer__brand {
+  max-width: 360px;
+}
+
+.footer__logo {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+
+  color: #ffffff;
+}
+
+.footer__description {
+  max-width: 280px;
+
+  margin: 16px 0 0;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ССЫЛКИ */
+
+.footer__links {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.footer__links a {
+  position: relative;
+
+  font-size: 13px;
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  transition: color 0.2s ease;
+}
+
+.footer__links a::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 100%;
+  height: 1px;
+
+  background: #ffffff;
+
+  transform: scaleX(0);
+  transform-origin: right;
+
+  transition: transform 0.25s ease;
+}
+
+.footer__links a:hover {
+  color: #ffffff;
+}
+
+.footer__links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* НИЖНЯЯ ЧАСТЬ */
+
+.footer__bottom {
+  max-width: 1200px;
+
+  margin: 70px auto 0;
+  padding: 22px 32px 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  font-size: 11px;
+
+  color: rgba(255, 255, 255, 0.32);
+}
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 599px) {
+  .footer {
+    padding: 54px 0 24px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+
+    padding: 0 24px;
+
+    gap: 42px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .footer__bottom {
+    margin-top: 52px;
+
+    padding: 20px 24px 0;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+}

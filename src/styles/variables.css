@@ -1,0 +1,14 @@
+:root {
+  --color-bg: #f7f5f0;
+  --color-surface: #eeece6;
+
+  --color-ink: #262522;
+  --color-ink-soft: #77746d;
+
+  --color-line: rgba(38, 37, 34, 0.14);
+
+ --font-display: Georgia, 'Times New Roman', serif;
+
+--font-body: Arial, Helvetica, sans-serif;
+  --container-width: 1200px;
+}
